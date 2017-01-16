@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title>TourSelection</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head> 
+	<body>
+	<p class="call"><img src='http://1.bp.blogspot.com/-R70TBOxahBY/VdSh727MYnI/AAAAAAAAAF0/as4Jp3GLXUU/s1600/phone-call.png' width="60" height="60" alt="call"/></p>
+		<form id="tourselection">
+			<fieldset>
+			<legend>Авторизация</legend>
+				<ul>
+					<li>
+						<label for="login">Логин</label>
+						<input id="login" class="style-text" type="text" name="login"/>
+					</li>
+					<li>
+						<label for="password">Пароль</label>
+						<input id="password" class="style-text" type="password" name="pass"/>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Персональные данные</legend>
+				<ul>
+					<li>
+						<label for="name">Имя</label>
+						<input id="name" class="style-text" name="name" type="text" placeholder="Имя и фамилия"/>
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input id="email" class="style-text" name="email" type="text" placeholder="goodholiday@tut.by"/>
+					</li>
+					<li>
+						<label for="phone">Телефон</label>
+						<input id="phone" class="style-text" name="phone" type="text" placeholder="+375 29 000-000-00"/>
+					</li>
+					<li>
+						<label for="address">Адрес</label>
+						<textarea id="address" name="address" rows=4></textarea>
+					</li>
+					<li>
+						<label>Город</label>
+						<select id="style-select" name="city">
+							<option value="ru">Минск</option>
+							<option>Брест</option>
+							<option>Витебск</option>
+							<option>Гомель</option>
+							<option>Гродно</option>
+							<option>Могилев</option>
+							<option>Другой</option>
+						</select>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Критерии отдыха</legend>
+				<ul>		
+					<li>
+				<fieldset>
+					<legend>Транспорт</legend>
+					<ul>
+						<li>
+							<input id="avia" name="transport" type="radio"/>
+							<label for="avia"><i class="fa fa-plane" aria-hidden="true"></i>Авиа</label>
+						</li>
+						<li>
+							<input  id="train" name="transport" type="radio"/>
+							<label for="train" ><i class="fa fa-train" aria-hidden="true"></i>Поезд</label>
+						</li>
+						<li>
+							<input id="bus" name="transport" type="radio"/>
+							<label for="bus"><i class="fa fa-bus" aria-hidden="true"></i>Автобус</label>
+						</li>
+					</ul>
+				</fieldset>
+					</li>
+					<li>
+						<label for="country">Страна</label>
+						<input id="country" class="style-text" name="country" type="text"/>
+					</li>
+					<li>
+						<label for="quantitydays">Количество дней</label>
+						<input id="quantitydays" class="style-text" name="quantitydays" type="text"/>
+					</li>
+					<li>
+						<label>Питание</label>
+						<select id="style-food" name="food">
+							<option value="ru">ALL - всё включено</option>
+							<option>RO - без питания</option>
+							<option>ВB - только завтрак</option>
+							<option>HB - завтрак и ужин</option>
+							<option>FB - завтрак, обед и ужин</option>
+							<option>UALL - ультра всё включено</option>
+						</select>
+					</li>
+				</ul>
+				<p>
+				<input id="yes" type="checkbox"/>
+				<label for="yes">Копия заявки на мой email</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<p class="movi"><button type="submit">Отправить</button></p>
+			</fieldset>
+		</form>
+		<br />
+	</body>
+</html>	
